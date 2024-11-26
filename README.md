@@ -8,6 +8,7 @@
 ```bash
   npm install express && npm install ws && npm init -y
   npm install chart.js
+```
 
 2nd, Run websocket and api on command prompt in terminal
 
