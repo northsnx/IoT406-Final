@@ -4,4 +4,7 @@
 
 ### How to Use
 1st, Install and run this command prompt in terminal
-  
+
+```bash
+  npm install express && npm install ws && npm init -y
+  npm install chart.js
