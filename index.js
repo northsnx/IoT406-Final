@@ -5,7 +5,7 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 
 console.log('Server started');
 // MongoDB Atlas connection setup
-const mongoURI = " ";
+const mongoURI = " ";      // <--insert you mogoURI 
 const client = new MongoClient(mongoURI, {
     serverApi: {
         version: ServerApiVersion.v1,
@@ -84,7 +84,7 @@ function getRandomHumidity() {
 
 
 // Azure Blob Storage connection setup
-const connection_string = " ";
+const connection_string = " ";      // <--insert you Azure string 
 const blob_service_client = BlobServiceClient.fromConnectionString(connection_string);
 const container_name = "sensor-backups";
 const containerClient = blob_service_client.getContainerClient(container_name);
