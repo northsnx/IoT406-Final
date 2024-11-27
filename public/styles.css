@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    margin: 0;
+    font-family: "Noto Sans", "Noto Sans Thai", Arial, sans-serif;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img5.pic.in.th/file/secure-sv1/BG05.md.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 1s ease;
+}
+
+/* Header Bar */
+header {
+    color: #fff;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 80px;
+    margin: 0 1em 0 2em;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-right: 1.2em;
+}
+
+header nav ul li a:hover {
+    color: #dda900;
+}
+
+/* Name Page: MENU */
+.menu {
+    padding-top: 2em;
+}
+
+.menu div h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.menu-toggle {
+    background-color: transparent;
+    /* สีพื้นหลังปกติ */
+    border: none;
+    color: rgb(255, 255, 255);
+    /* สีของไอคอน */
+    font-size: 30px;
+    /* ขนาดของไอคอน */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* เพิ่ม transition เพื่อความนุ่มนวล */
+}
+
+.menu-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* เปลี่ยนพื้นหลังเมื่อ hover */
+    color: #dda900;
+    /* เปลี่ยนสีของไอคอนเมื่อ hover */
+}
+
+/* Dashboard Page */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 1000px;
+}
+
+.grid-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.grid-card-item1,
+.grid-card-item2,
+.grid-card-item3 {
+    padding: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+/* Top grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid-container h1 {
+    font-size: 38px;
+}
+
+.grid-container h2 {
+    font-size: 20px;
+    margin-top: 0.5em;
+    font-weight: 300;
+}
+
+.grid-container h3 {
+    font-size: 32px;
+}
+
+.grid-container h4 {
+    font-size: 26px;
+    margin-top: 0.5em;
+    font-weight: 300;
+}
+
+.grid-container h5 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.grid-container h3,
+.grid-container h4 {
+    display: inline;
+    margin: 0 5px;
+}
+
+.grid-container img {
+    width: 99px;
+}
+
+.grid-item1,
+.grid-item2 {
+    padding: 20px;
+    color: white;
+}
+
+.grid-item2 {
+    text-align: right;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* Right column gets double the space */
+    gap: 10px;
+}
+
+.grid-container2 h1 {
+    font-size: 38px;
+}
+
+.grid-container2 h2 {
+    font-size: 20px;
+    margin-top: 0.5em;
+    font-weight: 300;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-size: 16px;
+    padding-bottom: 2.5em;
+}
+
+/* Default styles already defined above */
+
+/* 1200px */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    header nav ul li a {
+        font-size: 1.4em;
+    }
+
+    .menu div h1 {
+        font-size: 45px;
+    }
+}
+
+/* 1024px */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header .logo img {
+        width: 70px;
+        margin-right: 0;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+
+    .card {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .menu div h1 {
+        font-size: 40px;
+    }
+
+    .data img {
+        width: 100%;
+    }
+
+    .grid-card-item1 h1 {
+        font-size: 35px;
+    }
+
+    .grid-card-item2 h1 {
+        font-size: 35px;
+    }
+}
+
+/* 900px */
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header nav ul li a {
+        font-size: 1.3em;
+    }
+
+    .menu div h1 {
+        font-size: 35px;
+    }
+
+    .data div h3 {
+        font-size: 20px;
+    }
+
+    .data div h4 {
+        font-size: 18px;
+    }
+
+    .grid-container2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+
+    .dashboard {
+        padding: 15px;
+    }
+
+    .menu div h1 {
+        font-size: 30px;
+    }
+
+    .data div {
+        padding: 10px;
+        margin: 5px 0;
+    }
+}
+
+
+/* Default Style: Desktop */
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu ul li {
+    margin: 0 15px;
+}
+
+.menu-toggle {
+    display: none;
+    /* ซ่อน hamburger บน desktop */
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive: Mobile */
+@media (max-width: 600px) {
+    .nav-menu {
+        display: none;
+        /* ซ่อนเมนู */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        /* เลื่อนลงให้พ้น header */
+        right: 20px;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+    }
+
+    .nav-menu ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        /* แสดง hamburger */
+    }
+
+    .nav-menu.show {
+        display: flex;
+        /* แสดงเมนูเมื่อเปิด */
+    }
+
+    .nav-menu ul li a {
+        color: #ffffff;
+        /* สีตัวอักษร */
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+        display: block;
+        border-radius: 3px;
+        font-weight: bold;
+        /* ทำให้ตัวอักษรหนาขึ้น */
+    }
+
+    .nav-menu.show {
+        display: block;
+        background-color: rgba(42, 43, 42, 0.8);
+        /* เพิ่มความโปร่งใส (ค่า 0.8) */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        /* เงา */
+        border-radius: 5px;
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header nav ul li a {
+        font-size: 1em;
+    }
+
+    .menu div h1 {
+        font-size: 20px;
+    }
+
+    .card {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .data img {
+        width: 100%;
+    }
+}
+
+
+/* เพิ่มการจัดการการแสดงผลในหน้าจอเล็ก */
+@media (max-width: 324px) {
+
+    /* ปรับขนาด header h1 */
+    header h1 {
+        font-size: 1.2em;
+        /* เพิ่มขนาดให้ใหญ่ขึ้นเล็กน้อย */
+    }
+
+    /* ปรับขนาดของลิงก์ในเมนู */
+    header nav ul li a {
+        font-size: 0.8em;
+        /* ขนาดลิงก์ที่อ่านง่ายขึ้น */
+    }
+
+    /* ปรับขนาดฟอนต์ของ menu */
+    .menu div h1 {
+        font-size: 18px;
+        /* เพิ่มขนาดฟอนต์ให้พออ่านได้ */
+    }
+
+    /* ปรับขนาดของข้อความใน data */
+    .data div h3 {
+        font-size: 16px;
+        /* ขนาดพออ่านได้ */
+    }
+
+    .data div h4 {
+        font-size: 14px;
+        /* ขนาดที่พออ่านได้ */
+    }
+
+    /* อาจเพิ่มการจัดการให้ตัวอักษรมีพื้นที่มากขึ้น */
+    .data div {
+        padding: 8px;
+        /* เพิ่ม padding ให้พอดี */
+    }
+}
